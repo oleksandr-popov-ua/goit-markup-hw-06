@@ -556,7 +556,7 @@ header {
 
 @media screen and (min-width: 1158px) {
   .section-adv {
-    padding: 120px 140px;
+    padding: 120px 0px;
   }
 
   .adv-item {
@@ -592,7 +592,7 @@ header {
 
 /*============= TEAM STYLES =============*/
 .section-team {
-  padding: 96px 12px;
+  padding: 96px 0;
   margin: 0 auto;
   background-color: #f4f4fd;
 }
@@ -608,11 +608,13 @@ header {
 
 .team-list {
   display: flex;
+  align-items: center;
   flex-direction: column;
   row-gap: 72px;
 }
 
 .team-item {
+  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -676,24 +678,20 @@ header {
 
 @media screen and (min-width: 768px) {
   .section-team {
-    padding: 96px 92px;
-    max-width: 768px;
+    padding: 96px 0;
   }
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     row-gap: 64px;
     column-gap: 24px;
-  }
-  .team-item {
-    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .section-team {
     padding: 120px 0px;
-    max-width: 1158px;
   }
   .team-list {
     flex-direction: row;
@@ -803,7 +801,7 @@ header {
 }
 
 @media screen and (min-width: 1158px) {
-  .section-team {
+  .section-portf {
     padding: 120px 0px;
   }
 
@@ -928,7 +926,6 @@ header {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
-  margin-bottom: 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   opacity: 0.3;
 }
@@ -976,14 +973,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .page-footer {
-    padding: 96px 108px;
+    padding: 96px 0;
   }
 
   .footer-flex {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    max-width: 528px;
+    max-width: 584px;
   }
   .page-footer-container {
     max-width: 264px;
@@ -1003,6 +1000,7 @@ header {
 
   .footer-email {
     margin-bottom: 0;
+    width: 264px;
   }
 
   .footer-subscr-wrapper {
@@ -1020,6 +1018,14 @@ header {
     flex-direction: row;
     align-items: baseline;
     max-width: 1125px;
+    column-gap: 0;
+  }
+  .page-footer-container {
+    margin-right: 120px;
+  }
+  .footer-social-media {
+    margin-left: 0;
+    margin-right: auto;
   }
   .footer-email {
     width: 264px;
